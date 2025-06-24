@@ -1,0 +1,30 @@
+# Auto-label issues or PRs based on paths or keywords
+
+GitHub & Setup:
+  - changed-files:
+      - any-glob-to-any-file: ['.gitignore', '.github/**/*', '**/README.md']
+  - title: ['setup', 'config', 'repository']
+
+Inbound Email:
+  - title: ['email', 'SES', 'Lambda']
+  - body: ['SES', 'eml', 'AWS']
+
+Security:
+  - title: ['auth', 'security']
+  - body: ['whitelist', 'token', 'signature']
+
+Content:
+  - title: ['markdown', 'S3', 'post schema']
+  - body: ['frontmatter', 'upload', 'S3']
+
+Site Integration:
+  - title: ['webhook', 'Netlify', 'trigger']
+  - body: ['build', 'static site']
+
+Deployment:
+  - title: ['deploy', 'env', 'production']
+  - body: ['dotenv', 'monitor', 'Lambda']
+
+Tests:
+  - title: ['test', 'unit']
+  - body: ['unit test', 'validation']
